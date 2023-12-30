@@ -1,3 +1,5 @@
+import '../src/styles/main.css';
+
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
