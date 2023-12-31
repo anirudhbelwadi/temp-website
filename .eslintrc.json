@@ -43,7 +43,7 @@
     "camelcase": "warn",
     "no-nested-ternary": "error",
     "arrow-parens": ["error", "as-needed"],
-    "no-console": "error",
+    "no-console": "off",
     "complexity": "error",
     "max-depth": ["error", 3],
     "max-lines-per-function": ["error", 150],
