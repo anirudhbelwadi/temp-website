@@ -42,6 +42,9 @@
       "prettier --write",
       "eslint"
     ],
+    "src/**/*.css": [
+      "prettier --write"
+    ],
     "app/**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
       "eslint"
