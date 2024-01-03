@@ -212,6 +212,6 @@ body {
 
 @layer utilities {
   .max_container {
-    @apply mx-auto max-w-[128rem];
+    @apply mx-auto max-w-[128rem] d1280:px-1.8;
   }
 }

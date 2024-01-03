@@ -41,25 +41,37 @@ module.exports = {
       LufgaItalic900: ['LufgaItalic900']
     },
     fontSize: {
+      1: '1rem',
       1.4: '1.4rem',
+      1.6: '1.6rem',
       1.8: '1.8rem',
+      3.8: '3.8rem',
       6: '6rem'
     },
     spacing: {
+      0: '0',
       0.14: '0.14rem',
+      0.6: '0.6rem',
       0.8: '0.8rem',
       1: '1rem',
       1.2: '1.2rem',
+      1.6: '1.6rem',
+      1.8: '1.8rem',
+      2.2: '2.2rem',
+      2.4: '2.4rem',
       2.8: '2.8rem',
       3.2: '3.2rem',
       4: '4rem',
+      4.8: '4.8rem',
       6: '6rem',
-      6.4: '6.4rem'
+      6.4: '6.4rem',
+      8: '8rem'
     },
     colors: {
       'c-EEE7FA': '#EEE7FA',
       'c-5313CA': '#5313CA',
-      'c-050729': '#050729'
+      'c-050729': '#050729',
+      'c-FFFFFF': '#FFFFFF'
     },
     extend: {}
   }
