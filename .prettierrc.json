@@ -5,5 +5,7 @@
   "semi": true,
   "trailingComma": "none",
   "printWidth": 80,
-  "endOfLine": "crlf"
+  "endOfLine": "crlf",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "importOrderParserPlugins": ["jsx", "decorators", "decorators-legacy"]
 }

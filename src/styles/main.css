@@ -209,3 +209,9 @@ html {
 body {
   font-family: 'Lufga400';
 }
+
+@layer utilities {
+  .max_container {
+    @apply mx-auto max-w-[128rem];
+  }
+}
