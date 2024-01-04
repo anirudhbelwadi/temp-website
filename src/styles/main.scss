@@ -1,0 +1,53 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lufga400';
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.my_container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 128rem;
+  @media (max-width: 1280px) {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+
+.para_text {
+  font-size: 1.8rem;
+  color: var(--c-050729);
+  font-family: 'Lufga500';
+  opacity: 0.65;
+  @media (max-width: 640px) {
+    font-size: 1.6rem;
+  }
+}
+
+/* 
+@layer utilities {
+  .max_container {
+    @apply mx-auto max-w-[128rem] d1280:px-1.8;
+  }
+} */
