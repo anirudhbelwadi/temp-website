@@ -9,7 +9,7 @@ import ButtonArrowFilled from '../../commons/buttons/button-arrow-filled';
 const Banner = () => {
   return (
     <section className='banner'>
-      <div className='my_container'>
+      <div className='my-container'>
         <div className='banner__group'>
           <div className='banner__group-left'>
             <div className='banner__label-wrapper'>

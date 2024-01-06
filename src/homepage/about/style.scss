@@ -1,0 +1,40 @@
+.about {
+  &__group {
+    padding: 6rem;
+    border-radius: 5.6rem;
+    background-color: var(--c-F4F4F4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__img-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__btn-wrapper {
+    margin-top: 2.1rem;
+    margin-bottom: 4rem;
+  }
+  &__group-right {
+    align-self: end;
+  }
+  &__heading {
+    margin-top: 3.2rem;
+    margin-bottom: 8.4rem;
+    font-size: 4rem;
+    font-family: 'Lufga700';
+    span {
+      position: relative;
+      white-space: nowrap;
+      color: var(--c-5313CA);
+    }
+  }
+  &__group-right {
+    text-align: right;
+    // justify-self: end;
+    .about__img-wrapper {
+      justify-items: end;
+      //   column-gap: 2rem;
+    }
+  }
+}
