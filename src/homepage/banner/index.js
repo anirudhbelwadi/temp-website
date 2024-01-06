@@ -48,6 +48,110 @@ const Banner = () => {
             />
           </div>
         </div>
+        <div className='banner__collabration'>
+          <div className='banner__marquee'>
+            <div className='banner__company-logos-flex'>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className='banner__company-logos-flex'>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+              <div className='banner__company-log'>
+                <Image
+                  src='https://placehold.co/150x100/fff/000'
+                  alt='Associated company'
+                  width={150}
+                  height={100}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
