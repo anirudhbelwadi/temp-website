@@ -35,7 +35,7 @@ button {
   }
 }
 
-.para_text {
+.section-description {
   font-size: 1.8rem;
   color: var(--c-050729);
   font-family: 'Lufga500';
@@ -44,10 +44,3 @@ button {
     font-size: 1.6rem;
   }
 }
-
-/* 
-@layer utilities {
-  .max_container {
-    @apply mx-auto max-w-[128rem] d1280:px-1.8;
-  }
-} */

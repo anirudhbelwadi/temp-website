@@ -1,0 +1,108 @@
+.banner {
+  &__label-wrapper {
+    margin-bottom: 4rem;
+  }
+  &__group {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__heading {
+    margin-bottom: 3.2rem;
+    font-size: 6rem;
+    font-family: 'Lufga700';
+    span {
+      position: relative;
+      white-space: nowrap;
+      color: var(--c-5313CA);
+    }
+  }
+  &__marker-img {
+    position: absolute;
+    left: 0;
+    bottom: -0.65rem;
+    z-index: -1;
+  }
+  &__btn--transparent {
+    margin-right: 1.2rem;
+  }
+  &__description {
+    margin-bottom: 6rem;
+    width: 100%;
+    max-width: 72%;
+  }
+
+  &__group-right {
+    text-align: right;
+  }
+  &__banner-img {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1194px) {
+  .banner {
+    &__banner-img {
+      width: 35rem;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .banner {
+    &__group {
+      padding-left: 0;
+      padding-right: 0;
+      row-gap: 4rem;
+      grid-template-columns: 1fr;
+    }
+    &__group-left {
+      text-align: center;
+    }
+    &__marker-img {
+      left: 10rem;
+    }
+    &__description {
+      max-width: 100%;
+    }
+    &__banner-img {
+      margin-right: auto;
+      width: 70%;
+    }
+    &__group-right {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .banner {
+    &__label-wrapper {
+      margin-bottom: 2.4rem;
+    }
+    &__heading {
+      margin-bottom: 1.8rem;
+      font-size: 3.8rem;
+      span {
+        white-space: normal;
+        img {
+          left: 5rem;
+          bottom: 0.35rem;
+        }
+      }
+    }
+    &__description {
+      margin-bottom: 4rem;
+    }
+    &__btn--transparent {
+      margin-right: 0;
+      margin-bottom: 1.2rem;
+    }
+    &__banner-img {
+      width: 90%;
+    }
+  }
+}

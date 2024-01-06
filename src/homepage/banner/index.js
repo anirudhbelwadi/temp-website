@@ -1,44 +1,50 @@
+import './style.scss';
 import Image from 'next/image';
-import '../style.scss';
 import marker from '../../../public/images/marker.png';
 import bannerimg from '../../../public/images/bannerimg.jpg';
-import RightArrowSvg from '../../commons/right-arrow-svg';
+import SectionLabel from '../../commons/section-label';
+import ButtonTransparent from '../../commons/buttons/button-transparent';
+import ButtonArrowFilled from '../../commons/buttons/button-arrow-filled';
 
 const Banner = () => {
   return (
     <section className='banner'>
       <div className='my_container'>
-        <div className='grid_box'>
-          <div className='box_left'>
-            <span className='label'>100+ Listed Merchants</span>
-            <h1 className='heading'>
+        <div className='banner__group'>
+          <div className='banner__group-left'>
+            <div className='banner__label-wrapper'>
+              <SectionLabel title='100+ Listed Merchants' />
+            </div>
+            <h1 className='banner__heading'>
               One Stop Solution <br /> to get the <br />
-              <span className='relative'>
+              <span>
                 Import & Export Gyan
-                <Image src={marker} width={380} height={28} alt='Marker' />
+                <Image
+                  src={marker}
+                  width={380}
+                  height={28}
+                  alt='Marker'
+                  className='banner__marker-img'
+                />
               </span>
             </h1>
-            <p className='para_text'>
+            <p className='section-description banner__description'>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
             </p>
-            <button className='trasparent_btn' type='button'>
-              How It Works
-            </button>
-            <button className='arrow_btn' type='button'>
-              Explore More
-              <span className=''>
-                <RightArrowSvg />
-              </span>
-            </button>
+            <ButtonTransparent
+              title='How It Works'
+              className='banner__btn--transparent'
+            />
+            <ButtonArrowFilled title='Explore More' />
           </div>
-          <div className='box_right'>
+          <div className='banner__group-right'>
             <Image
               src={bannerimg}
               width={510}
               height={559}
               alt='Banner'
-              className='bannerimg'
+              className='banner__banner-img'
             />
           </div>
         </div>

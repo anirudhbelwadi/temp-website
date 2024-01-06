@@ -1,4 +1,4 @@
-const RightArrowSvg = ({ strokeColor = '#5313CA' }) => {
+const RightArrowSvg = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -9,13 +9,13 @@ const RightArrowSvg = ({ strokeColor = '#5313CA' }) => {
     >
       <path
         d='M2 12L21 12'
-        stroke={strokeColor}
+        stroke='#5313CA'
         strokeWidth='2'
         strokeLinejoin='round'
       />
       <path
         d='M16.5529 17.7956C17.8287 17.4537 18.9561 16.7004 19.7601 15.6526C20.5642 14.6047 21 13.3208 21 12C21 10.6792 20.5642 9.3953 19.7601 8.34743C18.9561 7.29957 17.8287 6.54629 16.5529 6.20445'
-        stroke={strokeColor}
+        stroke='#5313CA'
         strokeWidth='2'
         strokeLinejoin='round'
       />
