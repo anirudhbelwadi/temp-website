@@ -1,7 +1,7 @@
 import './style.scss';
 import Image from 'next/image';
-import marker from '../../../public/images/marker.png';
-import bannerimg from '../../../public/images/bannerimg.jpg';
+import marker from '../../../public/images/homepage/marker.png';
+import bannerimg from '../../../public/images/homepage/bannerimg.jpg';
 import SectionLabel from '../../commons/section-label';
 import ButtonTransparent from '../../commons/buttons/button-transparent';
 import ButtonArrowFilled from '../../commons/buttons/button-arrow-filled';
@@ -36,7 +36,10 @@ const Banner = () => {
               title='How It Works'
               className='banner__btn--transparent'
             />
-            <ButtonArrowFilled title='Explore More' />
+            <ButtonArrowFilled
+              title='Explore More'
+              className='banner__btn-arrow--filled'
+            />
           </div>
           <div className='banner__group-right'>
             <Image

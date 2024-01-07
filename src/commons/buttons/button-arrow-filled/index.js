@@ -1,9 +1,9 @@
 import './style.scss';
 import RightArrowSvg from '../../right-arrow-svg';
 
-const ButtonArrowFilled = ({ title = '' }) => {
+const ButtonArrowFilled = ({ title = '', className = '' }) => {
   return (
-    <button className='btn-arrow--filled' type='button'>
+    <button className={`btn-arrow--filled ${className}`} type='button'>
       {title}
       <span>
         <RightArrowSvg />
