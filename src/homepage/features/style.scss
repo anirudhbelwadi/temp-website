@@ -10,21 +10,51 @@
     background-color: rgba(83, 19, 202, 0.1);
     border-radius: 6rem;
   }
+
   &__list-item {
     position: relative;
     padding-left: 11.3rem;
     padding-top: 5.7rem;
     padding-bottom: 4rem;
     border-bottom: 4px solid var(--c-FFFFFF);
+    &:hover {
+      .features__item-heading {
+        color: var(--c-955CFF);
+      }
+      .features__item-img {
+        animation-name: featuresImgAnim;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  &__item-img {
+    position: absolute;
+    border-radius: 40px;
+    transform: rotate(-20deg);
+    right: 18.9rem;
+    opacity: 0;
+    top: 5rem;
+    pointer-events: none;
   }
   &__list-item:last-child {
     border-bottom: none;
+    .features__item-img {
+      opacity: 0;
+      top: -12rem;
+    }
+    &:hover {
+      .features__item-img {
+        animation-name: featuresLastImgAnim;
+      }
+    }
   }
   &__item-heading {
     font-size: 3.2rem;
     color: var(--c-050729);
     font-family: 'Lufga700';
     margin-bottom: 1.8rem;
+    transition: color 0.3s;
   }
   &__item-description {
     max-width: 52%;
@@ -62,6 +92,58 @@
       svg path {
         stroke: var(--c-FFFFFF);
       }
+    }
+  }
+}
+@media (max-width: 1193px) {
+  .features {
+    &__item-img {
+      display: none;
+    }
+    &__item-description {
+      max-width: 80%;
+    }
+  }
+}
+@media (max-width: 834px) {
+  .features {
+    &__list-item {
+      padding-left: 4.9rem;
+      padding-right: 2.4rem;
+      padding-top: 4rem;
+    }
+    &__item-index {
+      top: 1.5rem;
+      left: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .features {
+    &__heading {
+      margin-bottom: 3.2rem;
+      font-size: 3.8rem;
+    }
+    &__item-link {
+      position: initial;
+      transform: none;
+      margin-left: auto;
+    }
+    &__list-item {
+      padding-bottom: 3.2rem;
+    }
+    &__item-heading {
+      font-size: 2.4rem;
+      margin-bottom: 1.4rem;
+    }
+    &__item-index {
+      top: 2.7rem;
+      left: 2.5rem;
+    }
+    &__item-description {
+      margin-bottom: 2.4rem;
+      max-width: 100%;
     }
   }
 }
