@@ -1,0 +1,29 @@
+@keyframes marqueeAnimRTL {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes featuresImgAnim {
+  0% {
+    top: 5rem;
+    opacity: 0;
+    transform: rotate(-16deg);
+  }
+  100% {
+    top: 6rem;
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}
+@keyframes featuresLastImgAnim {
+  0% {
+    top: -11rem;
+    opacity: 0;
+    transform: rotate(-16deg);
+  }
+  100% {
+    top: -12rem;
+    opacity: 1;
+    transform: rotate(-20deg);
+  }
+}

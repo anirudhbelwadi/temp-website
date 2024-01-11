@@ -1,0 +1,27 @@
+.section-label {
+  position: relative;
+  display: inline-block;
+  border-radius: 1234px;
+  background-color: var(--c-EEE7FA);
+  padding: 1rem 1.2rem 1rem 2.8rem;
+  font-family: 'Lufga700';
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    transform: translateY(-50%);
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 1234px;
+    background-color: var(--c-5313CA);
+  }
+}
+@media (max-width: 640px) {
+  .section-label {
+    font-size: 1rem;
+  }
+}
