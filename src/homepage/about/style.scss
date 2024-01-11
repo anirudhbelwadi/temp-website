@@ -1,4 +1,5 @@
 .about {
+  margin-bottom: 12rem;
   &__group {
     padding: 6rem;
     border-radius: 5.6rem;
@@ -88,6 +89,7 @@
 }
 @media (max-width: 834px) {
   .about {
+    margin-bottom: 10rem;
     &__group {
       grid-template-columns: minmax(0, 1fr);
     }
