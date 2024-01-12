@@ -1,6 +1,7 @@
 import About from './about';
 import Banner from './banner';
 import Features from './features';
+import Locator from './locator';
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Banner />
       <About />
       <Features />
+      <Locator />
     </main>
   );
 };

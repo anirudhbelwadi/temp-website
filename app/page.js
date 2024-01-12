@@ -1,6 +1,10 @@
 import Home from '../src/homepage';
 
 const Page = () => {
-  return <Home />;
+  return (
+    <div className='my-container'>
+      <Home />
+    </div>
+  );
 };
 export default Page;
