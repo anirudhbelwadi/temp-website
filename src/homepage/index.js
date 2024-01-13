@@ -1,4 +1,4 @@
-import About from './about';
+// import About from './about';
 import Banner from './banner';
 import Features from './features';
 
