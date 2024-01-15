@@ -1,9 +1,31 @@
+'use client';
+
 import './style.scss';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import SectionLabel from '../../commons/section-label';
 import searchIcon from '../../../public/images/common/search-icon.svg';
+import constants from '../../utils/constants';
 
 const Locator = () => {
+  const { HSN_LOCATOR, PRODUCTS } = constants;
+  const [selectedId, setSelectedId] = useState(HSN_LOCATOR);
+  const [offsetLeft, setOffsetLeft] = useState(0);
+
+  const selectSearchType = e => {
+    const { id } = e.target;
+    if (!id || selectedId === id) return;
+    if (selectedId) {
+      document.getElementById(selectedId).classList.remove('active');
+    }
+    document.getElementById(id).classList.add('active');
+    setSelectedId(id);
+    setOffsetLeft(document.getElementById(id)?.offsetLeft);
+  };
+  useEffect(() => {
+    setOffsetLeft(document.getElementById(selectedId)?.offsetLeft);
+  }, []);
+
   return (
     <section className='locator'>
       <div className='locator__group'>
@@ -24,6 +46,23 @@ const Locator = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
+          <div
+            className='locator__search-type-wrapper'
+            onClick={selectSearchType}
+          >
+            <span className='locator__search-type active' id={HSN_LOCATOR}>
+              HSN Locator
+            </span>
+            <span className='locator__search-type' id={PRODUCTS}>
+              Products
+            </span>
+            <div
+              className='locator__search-type--active-bg'
+              style={{
+                left: offsetLeft || 0
+              }}
+            />
+          </div>
           <div className='locator__input-wrapper'>
             <input
               type='text'
