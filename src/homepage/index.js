@@ -1,5 +1,6 @@
 import About from './about';
 import Banner from './banner';
+import Demo from './demo';
 import Features from './features';
 import Locator from './locator';
 
@@ -10,6 +11,7 @@ const Home = () => {
       <About />
       <Features />
       <Locator />
+      <Demo />
     </main>
   );
 };
