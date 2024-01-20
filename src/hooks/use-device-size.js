@@ -8,6 +8,7 @@ const useDeviceSize = () => {
     setWidth(window.innerWidth);
     window.addEventListener('resize', handleWindowSizeChange);
     return () => {
+      console.log('3');
       window.removeEventListener('resize', handleWindowSizeChange);
     };
   }, []);

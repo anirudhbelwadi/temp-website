@@ -2,6 +2,7 @@
   padding: 8rem;
   background-color: var(--c-F4F4F4);
   border-radius: 5.6rem;
+  margin-bottom: 12rem;
   &__heading {
     font-family: 'Lufga700';
     font-size: 4rem;
@@ -83,6 +84,7 @@
 }
 @media (max-width: 765px) {
   .demo {
+    margin-bottom: 10rem;
     border-radius: 4rem;
     &__heading {
       font-size: 2.8rem;

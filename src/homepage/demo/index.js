@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import './style.scss';
 import { Navigation, EffectCreative } from 'swiper/modules';
 import { useEffect, useRef } from 'react';
@@ -12,7 +11,6 @@ const Demo = () => {
   const demoVideoRef = useRef();
 
   useEffect(() => {
-    console.log('inside');
     const params = {
       modules: [Navigation, EffectCreative],
       navigation: {
