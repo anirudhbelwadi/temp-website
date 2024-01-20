@@ -1,5 +1,3 @@
-'use client';
-
 import './style.scss';
 import Image from 'next/image';
 import ButtonArrowFilled from '../../commons/buttons/button-arrow-filled';
