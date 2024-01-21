@@ -3,6 +3,7 @@ import Banner from './banner';
 import Consultation from './consultation';
 import Demo from './demo';
 import Features from './features';
+import Journey from './journey';
 import Locator from './locator';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Locator />
       <Demo />
       <Consultation />
+      <Journey />
     </main>
   );
 };
