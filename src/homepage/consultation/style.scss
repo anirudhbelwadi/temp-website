@@ -1,0 +1,100 @@
+.consultation {
+  padding: 8rem;
+  margin-bottom: 12rem;
+  border-radius: 6rem;
+  background-image: url(../../../public/images/homepage/content.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .section-label {
+    background-color: rgba(5, 7, 41, 0.2);
+  }
+  .section-heading40 {
+    margin-top: 0.4rem;
+    margin-bottom: 2.4rem;
+    user-select: none;
+  }
+  &__description {
+    margin-bottom: 6rem;
+    max-width: 50%;
+    user-select: none;
+  }
+  &__slide {
+    background-color: var(--c-FFFFFF);
+    border-radius: 4rem;
+    padding: 1.8rem 2.4rem;
+    position: relative;
+  }
+  &__number {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    font-size: 4rem;
+    font-family: 'Lufga700';
+    color: var(--c-050729);
+    opacity: 0.2;
+  }
+  &__slide-heading {
+    font-size: 2.4rem;
+    font-family: 'Lufga700';
+    color: var(--c-050729);
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  &__slide-description {
+    font-size: 1.6rem;
+    color: rgba(31, 22, 15, 0.64);
+  }
+}
+
+@media (max-width: 1193px) {
+  .consultation {
+    padding: 2.4rem;
+    border-radius: 4rem;
+    &__description {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .consultation {
+    background-image: none;
+    background-color: rgba(83, 19, 202, 0.1);
+    margin-bottom: 10rem;
+
+    .section-heading40 {
+      margin-top: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+    &__description {
+      margin-bottom: 4rem;
+    }
+    &__slide {
+      border-radius: 4rem;
+      padding: 1.6rem;
+    }
+    .arrow_wrapper {
+      text-align: center;
+    }
+    .navigation_wrapper {
+      margin-top: 4rem;
+      justify-content: center;
+    }
+    &__number {
+      font-size: 3.2rem;
+    }
+    &__slide-heading {
+      font-size: 2rem;
+      margin-top: 2.4rem;
+      margin-bottom: 1.4rem;
+      color: var(--c-955CFF);
+    }
+    &__img {
+      max-width: 12rem;
+    }
+  }
+}
