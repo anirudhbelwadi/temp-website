@@ -1,3 +1,5 @@
+import 'swiper/css';
+import 'swiper/css/pagination';
 import '../src/styles/main.scss';
 
 const RootLayout = ({ children }) => {
