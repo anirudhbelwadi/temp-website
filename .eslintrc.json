@@ -7,12 +7,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "sonarjs", "promise", "prettier"],
+  "plugins": ["react", "sonarjs", "promise", "jsx-a11y", "prettier"],
   "extends": [
     "airbnb",
     "plugin:react/recommended",
     "plugin:sonarjs/recommended",
     "plugin:promise/recommended",
+    "plugin:jsx-a11y/recommended",
     "next",
     "plugin:prettier/recommended"
   ],
@@ -91,12 +92,12 @@
       "error",
       { "optionalDependencies": false }
     ],
-    "jsx-ally/label-has-associated-control": "off",
-    "jsx-ally/no-static-element-interactions": "off",
-    "jsx-ally/click-events-have-key-events": "off",
-    "jsx-ally/control-has-associated-label": "off",
-    "jsx-ally/no-noninteractive-element-interactions": "off",
-    "jsx-ally/alt-text": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/alt-text": "off",
     "promise/prefer-await-to-then": "warn"
   },
   "settings": {

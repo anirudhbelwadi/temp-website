@@ -1,7 +1,7 @@
 import './style.scss';
 
-const SectionLabel = ({ title = '' }) => {
-  return <span className='section-label'>{title}</span>;
+const SectionLabel = ({ title = '', className = '' }) => {
+  return <span className={`section-label ${className}`}>{title}</span>;
 };
 
 export default SectionLabel;
