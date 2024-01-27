@@ -1,0 +1,205 @@
+.footer {
+  margin-bottom: 8rem;
+  &__wrapper {
+    border-radius: 6rem;
+    background-color: var(--c-050729);
+    padding-top: 6rem;
+    padding-bottom: 2.4rem;
+  }
+  &__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: var(--c-FFFFFF);
+      font-family: 'Lufga700';
+      font-size: 2.6rem;
+      margin-left: 1rem;
+    }
+  }
+  &__input-wrapper {
+    border-radius: 1000px;
+    background-color: var(--c-B9BBD5);
+    width: 40.7rem;
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    margin: 6rem auto 12rem;
+    padding-left: 3.2rem;
+    padding-right: 7rem;
+    position: relative;
+  }
+  &__input {
+    margin-left: 1.2rem;
+    font-size: 1.8rem;
+    color: var(--c-050729);
+    font-family: 'Lufga700';
+    background-color: var(--c-B9BBD5);
+    flex-grow: 1;
+  }
+  &__input::placeholder {
+    color: var(--c-050729);
+  }
+
+  &__input::-ms-input-placeholder {
+    color: var(--c-050729);
+  }
+  &__submit-icon {
+    position: absolute;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1000px;
+    border: 2px solid var(--c-000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background-color: var(--c-050729);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    svg path {
+      stroke: var(--c-FFFFFF);
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    margin-bottom: 6rem;
+  }
+  &__link {
+    font-size: 1.8rem;
+    font-family: 'Lufga500';
+    opacity: 0.6;
+    color: var(--c-FFFFFF);
+    position: relative;
+  }
+  &__link.active {
+    opacity: 1;
+  }
+  &__link.active::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--c-955CFF);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1.5rem;
+  }
+  &__tnc-wrapper {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    height: 6rem;
+    border-radius: 4.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c-FFFFFF);
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    p {
+      font-size: 1.4rem;
+      color: var(--c-5313CA);
+      font-family: 'Lufga800';
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+    a {
+      font-family: 'Lufga700';
+      font-size: 1.4rem;
+      color: var(--c-050729);
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+    .pp {
+      position: relative;
+      margin-left: 5.4rem;
+      &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: var(--c-955CFF);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -3rem;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 1192px) {
+  .footer {
+    &__links {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    &__links {
+      flex-direction: column;
+    }
+    &__link {
+      margin-bottom: 2.4rem;
+    }
+    &__tnc-wrapper {
+      flex-direction: column-reverse;
+      height: auto;
+      padding: 2.4rem 0 1.6rem;
+      a {
+        display: block;
+        text-align: center;
+      }
+      .pp {
+        margin-top: 1.4rem;
+        margin-left: 0;
+        margin-bottom: 2.4rem;
+        &::before {
+          display: none;
+        }
+      }
+      p {
+        padding-top: 1.6rem;
+        text-align: center;
+      }
+      .link-wrapper {
+        width: 100%;
+        border-bottom: 2px solid var(--c-050729);
+      }
+    }
+    &__input-wrapper {
+      margin-bottom: 6rem;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    margin-bottom: 1.8rem;
+    &__wrapper {
+      border-radius: 5.4rem;
+    }
+    &__logo-wrapper span {
+      font-size: 1.6rem;
+    }
+    &__input-wrapper {
+      width: 90%;
+      margin-top: 4rem;
+      padding-left: 2rem;
+    }
+    &__tnc-wrapper {
+      border-radius: 2.4rem;
+    }
+    &__input {
+      font-size: 1.6rem;
+      width: 65%;
+    }
+  }
+}

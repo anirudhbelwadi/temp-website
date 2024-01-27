@@ -21,6 +21,17 @@ input:focus {
   outline: none;
 }
 
+textarea,
+input {
+  border: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   height: auto;
